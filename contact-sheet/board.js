@@ -1,6 +1,6 @@
 (async function () {
-  const KEY = "contact-sheet-v4";
-  const OLD_KEYS = ["contact-sheet-v3", "contact-sheet-v2", "contact-sheet-v1"];
+  const KEY = "contact-sheet-v5";
+  const OLD_KEYS = ["contact-sheet-v4", "contact-sheet-v3", "contact-sheet-v2", "contact-sheet-v1"];
   const $ = (s, el = document) => el.querySelector(s);
   const board = $("#board"), status = $("#status");
 

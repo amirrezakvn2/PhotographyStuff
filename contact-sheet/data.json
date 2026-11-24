@@ -526,7 +526,7 @@
   {
    "id": "up",
    "title": "Look Up",
-   "note": "Kept as it was. Wonder: kids pointing at the Atomium, a man's arm raised to a kite between the towers, a couple under a needle with a giant insect on top, a crowd tilting their heads to a painted ceiling. One gesture in four cities.",
+   "note": "Wonder spreading. 1: two kids point up at the Atomium; the discovery starts with children. 2: a grown man raises his arm to a kite between the towers; an adult joins in. 3: a couple stands close under a needle with a giant insect on top; now it's shared. 4: indoors, a whole crowd tilts their heads to a painted ceiling. From one child's finger to everyone.",
    "ids": [
     "51",
     "44",
@@ -535,9 +535,9 @@
    ]
   },
   {
-   "id": "hand",
-   "title": "Hand in Hand",
-   "note": "Adults guiding children into the city, and slowly letting go. A man reaches for a child's hand by the lake; a mother holds one child while another rides on shoulders; a man points a child towards a sign that says 'we are building something big'; finally a child races ahead on a scooter, the parent's cargo bike behind. Care, then independence. 03 and 54 are colour.",
+   "id": "growing",
+   "title": "Growing Up",
+   "note": "A childhood in four frames. 1: by the lake a man reaches down for a small child's hand. 2: at a concert a mother holds one child while another rides on shoulders; still carried. 3: a man points a child to a sign that reads 'we are building something big'; being shown the future. 4: a child races ahead on a scooter, the parent's bike now behind. Ends with letting go. 03 and 54 are colour; 46 and 65 B&W.",
    "ids": [
     "03",
     "54",
@@ -546,119 +546,87 @@
    ]
   },
   {
-   "id": "alone",
-   "title": "Alone in the Crowd",
-   "note": "Solitude inside the busy city. A single figure under an arch in the rain; a man on his phone while shoppers blur past; a man leaning on a shutter while people stream by; one tiny figure on the Galleria roof. Each person is surrounded, but nobody is with them.",
+   "id": "dark",
+   "title": "From Dark to Light",
+   "note": "A walk through Design Week. 1: a man steps through a black doorway; we go in with him. 2: heads pushed into a porthole; curiosity. 3: a child crouched alone inside a black box; hiding, or lost. 4: faces in a narrow slit; looking for a way out. 5: outside in the white, an old woman watches a boy cross; the light, and someone keeping watch.",
    "ids": [
-    "13",
-    "25",
-    "41",
-    "02"
+    "30",
+    "29",
+    "26",
+    "27",
+    "32"
    ]
   },
   {
-   "id": "together",
-   "title": "Together",
-   "note": "The opposite of 'Alone in the Crowd': bodies close to each other. Old friends on a bench watching bocce; chefs with their arms around each other; two women dancing at a concert; couples dancing on the steps. Read it straight after 'Alone in the Crowd'.",
+   "id": "dance",
+   "title": "Waiting for the Dance",
+   "note": "From loneliness to joining in. 1: at night a man stands on his phone as shoppers blur past him. 2: a man leans on a shutter, waiting, while people stream by. 3: at a concert, a man watches two women dance, close to the joy but not in it. 4: on the steps, couples dance together and people gather round. The loner finally joins.",
    "ids": [
-    "14",
-    "08",
+    "25",
+    "41",
     "06",
     "61"
    ]
   },
   {
-   "id": "want",
+   "id": "desire",
    "title": "What We're Sold",
-   "note": "People and the images made to sell to them. A Chanel model checks her watch above a man hauling cardboard; a child drags her mother towards a giant shoe under a billboard face; women pass a mannequin in the coat they are all wearing; a mural boy holds his face in despair while passers-by look at their phones. Luxury, labour, desire, indifference. Mostly colour (43 is B&W).",
+   "note": "How wanting is made and passed on. 1: a model checks her luxury watch on a billboard while a man hauls cardboard below; the image goes up. 2: women stop at a shop window, one photographing the mannequin; the wanting starts. 3: a child drags her mother towards a giant shoe under a billboard face; it's passed to the next generation. 4: a mural boy holds his face in his hands as passers-by look at their phones; what's left is emptiness.",
    "ids": [
     "20",
-    "43",
     "10",
+    "43",
     "49"
    ]
   },
   {
-   "id": "generations",
-   "title": "Generations",
-   "note": "Young lives at the feet of old things. An old woman watches a boy cross a white installation; a toddler stands before a classical statue; two girls in First Communion veils pass under the castle gate; young women laugh under a bronze horseman at sunset. Tradition, inheritance, and the new generation living inside it.",
+   "id": "inherit",
+   "title": "Inheritance",
+   "note": "The old hand the city to the young. 1: old men on a bench watch the bocce game; the elders. 2: a toddler stands before a classical statue; first meeting with the past. 3: two girls in First Communion veils pass under the castle gate; a ritual, a passage. 4: young women laugh under a bronze horseman at sunset; the city is theirs now.",
    "ids": [
-    "32",
+    "14",
     "31",
     "21",
     "60"
    ]
   },
   {
-   "id": "dark",
-   "title": "Into the Dark",
-   "note": "Curiosity pulling people into black spaces. Heads pushed into a porthole; faces in a slit window; a child crouched inside a black box; a man stepping through a dark doorway. The sequence moves from looking in to going in.",
+   "id": "wayout",
+   "title": "The Way Out",
+   "note": "From confinement to freedom. 1: tiny figures squeezed into a strip of light between dark walls. 2: a lone figure stands under an arch in the rain, looking out. 3: a bird lifts off above a crowd held back behind a fence. 4: a boy spins freely in an open square under a storm sky.",
    "ids": [
-    "29",
-    "27",
-    "26",
-    "30"
-   ]
-  },
-  {
-   "id": "rhythm",
-   "title": "Falling into Line",
-   "note": "People unconsciously taking on the rhythm of the architecture around them: visitors in white standing like the white panels beside them; walkers lined up in a strip of light under Gothic windows; a woman striding past a run of arcades; figures between the columns of the Bourse.",
-   "ids": [
-    "33",
     "12",
-    "16",
-    "55"
-   ]
-  },
-  {
-   "id": "loose",
-   "title": "Breaking Loose",
-   "note": "Moments of release in controlled spaces. A bird flies free above a crowd held back by a fence; pigeons scatter over bikes dropped on the ground; a boy spins in an empty square under a storm sky; kids climb a ramp that wasn't built for climbing.",
-   "ids": [
+    "13",
     "11",
-    "17",
-    "48",
-    "58"
+    "48"
    ]
   },
   {
-   "id": "companions",
-   "title": "Companions",
-   "note": "People and their dogs. A dog peers out of a bag at passing legs; a dog in a backpack looks straight at the camera; a man plays with his dog under the vertical forest; a man and his dog watch boys play football.",
-   "ids": [
-    "07",
-    "24",
-    "45",
-    "15"
-   ]
-  },
-  {
-   "id": "jokes",
-   "title": "Small Jokes",
-   "note": "The city's coincidences. A man waves next to a photo booth with someone's legs sticking out; a woman perches in the street under a painted woman on the wall; a giant toy unicorn stares out of a shop window; a toddler stretches in boredom while adults kneel to photograph the Galleria.",
-   "ids": [
-    "62",
-    "57",
-    "47",
-    "19"
-   ]
-  },
-  {
-   "id": "spectacle",
-   "title": "Spectacle",
-   "note": "Big shows, small audiences. A crowd behind railings under a giant laughing face; men beneath a towering printed figure; viewers circling a yacht model in the dark; a chandelier hanging over a hall of rigging.",
+   "id": "show",
+   "title": "The Show",
+   "note": "A spectacle seen by those who don't care. 1: a crowd pressed against railings under a giant laughing face. 2: men dwarfed beneath a towering printed figure. 3: visitors circle a yacht model in the dark, silent. 4: in the Galleria, adults kneel to photograph while a toddler stretches in total boredom. The punchline.",
    "ids": [
     "28",
     "37",
     "39",
-    "38"
+    "19"
+   ]
+  },
+  {
+   "id": "dogs",
+   "title": "Companions",
+   "note": "A dog's way from carried to free (it mirrors 'Growing Up'). 1: a dog's head out of a bag; it only sees legs. 2: a dog in a backpack, high up, looks straight at us. 3: a dog on the ground beside its man, watching boys play football. 4: a dog runs and plays with its owner under the vertical forest.",
+   "ids": [
+    "07",
+    "24",
+    "15",
+    "45"
    ]
   },
   {
    "id": "side",
    "title": "Side by Side",
-   "note": "Quiet company, no words needed. Two men at a lake railing; a couple taking a selfie by a canal; pairs sitting along a riverbank; two men resting at the base of a statue.",
+   "note": "Company through a day, standing to resting. 1: two men at a lake railing, looking at the water. 2: a couple stops for a selfie by a canal. 3: pairs sit along a riverbank. 4: two men rest at the base of a statue, a shoe left on the ground; the day is done.",
    "ids": [
     "04",
     "63",
@@ -667,22 +635,40 @@
    ]
   },
   {
+   "id": "watching",
+   "title": "Who's Watching",
+   "note": "The camera gets caught. 1: a man waves at the photographer while someone hides in a photo booth beside him. 2: a woman poses on a post in the street under a painted woman. 3: a giant toy unicorn stares out of a shop window, straight back at us.",
+   "ids": [
+    "62",
+    "57",
+    "47"
+   ]
+  },
+  {
    "id": "unplaced",
    "title": "Unplaced",
-   "note": "Not in a series yet.",
+   "note": "Not in a story yet.",
    "ids": [
     "01",
+    "02",
     "05",
+    "08",
     "09",
+    "16",
+    "17",
     "22",
     "23",
+    "33",
     "34",
     "35",
     "36",
+    "38",
     "40",
     "42",
     "52",
     "53",
+    "55",
+    "58",
     "64"
    ]
   }
