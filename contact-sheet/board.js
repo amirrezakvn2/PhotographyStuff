@@ -1,5 +1,6 @@
 (async function () {
-  const KEY = "contact-sheet-v2";
+  const KEY = "contact-sheet-v3";
+  const OLD_KEYS = ["contact-sheet-v2", "contact-sheet-v1"];
   const $ = (s, el = document) => el.querySelector(s);
   const board = $("#board"), status = $("#status");
 
@@ -283,6 +284,21 @@
     if (Math.abs(dx) > 50) show(pos + (dx < 0 ? 1 : -1)); else if (Math.abs(dx) < 8 && e.target === lb) close();
     x0 = null;
   });
+
+  /* Offer to bring back a layout saved with an earlier version of the suggestions */
+  const restore = $("#restore");
+  let oldKey = null;
+  try { oldKey = OLD_KEYS.find((k) => localStorage.getItem(k)); } catch {}
+  if (oldKey && !store.get()) {
+    restore.hidden = false;
+    restore.addEventListener("click", () => {
+      try {
+        const old = JSON.parse(localStorage.getItem(oldKey));
+        state = normalise(old.groups); render(); save("Restored your previous layout");
+        restore.hidden = true;
+      } catch { status.textContent = "Couldn't read the previous layout."; }
+    });
+  }
 
   render();
   status.textContent = store.get() ? "Your saved layout" : "Suggested series";
