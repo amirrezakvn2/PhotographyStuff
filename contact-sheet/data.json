@@ -1,0 +1,634 @@
+{
+ "version": 1,
+ "photos": [
+  {
+   "id": "01",
+   "file": "20220718_195133.jpg",
+   "date": "2022-07-18",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "02",
+   "file": "IMG_4281 (4).jpg",
+   "date": "2025-06-10",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "03",
+   "file": "P1000696 (1).jpg",
+   "date": "2025-08-11",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "04",
+   "file": "P1000725 (1).jpg",
+   "date": "2025-08-11",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "05",
+   "file": "P1000736 (1).jpg",
+   "date": "2025-08-11",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "06",
+   "file": "P1010156 (1).jpg",
+   "date": "2025-09-06",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "07",
+   "file": "P1010292 (2).jpg",
+   "date": "2025-10-04",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "08",
+   "file": "P1010359 (1).jpg",
+   "date": "2025-10-05",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "09",
+   "file": "P1010386.jpg",
+   "date": "2025-10-05",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "10",
+   "file": "P1010769 (1).jpg",
+   "date": "2025-11-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "11",
+   "file": "P1010781 (1).jpg",
+   "date": "2025-11-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "12",
+   "file": "P1020038.jpg",
+   "date": "2025-12-14",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "13",
+   "file": "P1020243 (1).jpg",
+   "date": "2025-12-24",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "14",
+   "file": "P1020522 (2).jpg",
+   "date": "2026-03-07",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "15",
+   "file": "P1020774 (1).jpg",
+   "date": "2026-03-08",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "16",
+   "file": "P1020779 (1).jpg",
+   "date": "2026-03-08",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "17",
+   "file": "P1020800 (3).jpg",
+   "date": "2026-03-08",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "18",
+   "file": "P1020850 (1).jpg",
+   "date": "2026-03-08",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "19",
+   "file": "P1030089 (1).jpg",
+   "date": "2026-04-10",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "20",
+   "file": "P1030140 (1).jpg",
+   "date": "2026-04-12",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "21",
+   "file": "P1030157 (2).jpg",
+   "date": "2026-04-12",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "22",
+   "file": "P1030168 (1).jpg",
+   "date": "2026-04-12",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "23",
+   "file": "P1030182 (1).jpg",
+   "date": "2026-04-12",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "24",
+   "file": "P1030196 (1).jpg",
+   "date": "2026-04-12",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "25",
+   "file": "P1030261 (2).jpg",
+   "date": "2026-04-19",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "26",
+   "file": "P1030286 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "27",
+   "file": "P1030290 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "28",
+   "file": "P1030298 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "29",
+   "file": "P1030304 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "30",
+   "file": "P1030306 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "31",
+   "file": "P1030309 (2).jpg",
+   "date": "2026-04-21",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "32",
+   "file": "P1030318 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "33",
+   "file": "P1030325 (2).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "34",
+   "file": "P1030340 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "35",
+   "file": "P1030361 (1).jpg",
+   "date": "2026-04-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "36",
+   "file": "P1030375 (1).jpg",
+   "date": "2026-04-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "37",
+   "file": "P1030420 (2).jpg",
+   "date": "2026-04-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "38",
+   "file": "P1030426 (1).jpg",
+   "date": "2026-04-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "39",
+   "file": "P1030432.jpg",
+   "date": "2026-04-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "40",
+   "file": "P1030447 (1).jpg",
+   "date": "2026-04-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "41",
+   "file": "P1030449 (1).jpg",
+   "date": "2026-04-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "42",
+   "file": "P1030453 (1).jpg",
+   "date": "2026-04-23",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "43",
+   "file": "P1030499 (1).jpg",
+   "date": "2026-04-24",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "44",
+   "file": "P1030684 (2).jpg",
+   "date": "2026-05-13",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "45",
+   "file": "P1030688 (1).jpg",
+   "date": "2026-05-13",
+   "w": 1126,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "46",
+   "file": "P1030690 (1).jpg",
+   "date": "2026-05-13",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "47",
+   "file": "P1030695.jpg",
+   "date": "2026-05-13",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "48",
+   "file": "P1030722.jpg",
+   "date": "2026-05-17",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "49",
+   "file": "P1030760 (1).jpg",
+   "date": "2026-05-21",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "50",
+   "file": "P1030855 (1).jpg",
+   "date": "2026-05-21",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "51",
+   "file": "P1030947 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "52",
+   "file": "P1030978 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "53",
+   "file": "P1030994 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "54",
+   "file": "P1040011 (2).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "55",
+   "file": "P1040014 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "56",
+   "file": "P1040062 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "57",
+   "file": "P1040067 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "58",
+   "file": "P1040085 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "59",
+   "file": "P1040089 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "60",
+   "file": "P1040098 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": false
+  },
+  {
+   "id": "61",
+   "file": "P1040111.jpg",
+   "date": "2026-05-22",
+   "w": 1125,
+   "h": 1500,
+   "bw": true
+  },
+  {
+   "id": "62",
+   "file": "P1040119 (1).jpg",
+   "date": "2026-05-22",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "63",
+   "file": "P1040245.jpg",
+   "date": "2026-05-24",
+   "w": 1500,
+   "h": 1125,
+   "bw": false
+  },
+  {
+   "id": "64",
+   "file": "P1040267.jpg",
+   "date": "2026-05-24",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  },
+  {
+   "id": "65",
+   "file": "P1040281 (1).jpg",
+   "date": "2026-05-24",
+   "w": 1500,
+   "h": 1125,
+   "bw": true
+  }
+ ],
+ "groups": [
+  {
+   "id": "bigger",
+   "title": "Bigger Than Us",
+   "note": "Faces and figures made for selling or decorating (billboards, murals, posters, mannequins) towering over the real people passing by. The city looks back at you in a size you can't match.",
+   "ids": [
+    "20",
+    "25",
+    "43",
+    "28",
+    "37",
+    "49",
+    "61",
+    "10",
+    "47"
+   ]
+  },
+  {
+   "id": "visitors",
+   "title": "Visitors",
+   "note": "Milan Design Week, 21\u201322 April 2026. People peering into, walking through and getting swallowed by installations. The architecture frames them; small figures against big built shapes.",
+   "ids": [
+    "32",
+    "33",
+    "26",
+    "27",
+    "29",
+    "30",
+    "34",
+    "31",
+    "38",
+    "39",
+    "36"
+   ]
+  },
+  {
+   "id": "thresholds",
+   "title": "Thresholds",
+   "note": "Arches, doorways, hard shadow and cut-out light. Graphic black and white where people are reduced to small figures standing at an edge between dark and light.",
+   "ids": [
+    "13",
+    "12",
+    "21",
+    "02",
+    "59",
+    "62",
+    "46",
+    "09",
+    "11"
+   ]
+  },
+  {
+   "id": "small",
+   "title": "Small in the City",
+   "note": "Children and dogs moving through adult public space, playing, pointing, being carried, running. A lighter counterweight to the other series.",
+   "ids": [
+    "19",
+    "15",
+    "23",
+    "51",
+    "58",
+    "65",
+    "48",
+    "07",
+    "24",
+    "45",
+    "05"
+   ]
+  },
+  {
+   "id": "north",
+   "title": "Northbound (place series)",
+   "note": "Brussels and Amsterdam, May 2026. Works as a travel diary; many frames could also move into the thematic series above.",
+   "ids": [
+    "50",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "60",
+    "63",
+    "64"
+   ]
+  },
+  {
+   "id": "unplaced",
+   "title": "Unplaced",
+   "note": "Not in a series yet. Some are strong singles (14 bocce players, 17 birds and fallen bikes, 18 riverbank) that could anchor a future Veneto set.",
+   "ids": [
+    "01",
+    "03",
+    "04",
+    "06",
+    "08",
+    "14",
+    "16",
+    "17",
+    "18",
+    "22",
+    "35",
+    "40",
+    "41",
+    "42",
+    "44"
+   ]
+  }
+ ]
+}

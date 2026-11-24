@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta name="robots" content="noindex">
+  <title>Contact sheet — series editing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="board.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-title">
+      <h1>Contact sheet</h1>
+      <span id="status" class="status">Loading…</span>
+    </div>
+    <div class="bar-tools">
+      <label class="size">Size <input id="size" type="range" min="70" max="220" value="120"></label>
+      <button id="add">+ Series</button>
+      <button id="export">Export</button>
+      <label class="btn">Import<input id="import" type="file" accept="application/json" hidden></label>
+      <button id="reset" class="ghost">Reset</button>
+    </div>
+  </header>
+
+  <p class="help">Drag photos to reorder them or move them between series. On a phone, press and hold a photo for a moment before dragging. Tap a photo to see it large. Edit titles and notes directly. Everything is saved in this browser.</p>
+
+  <main id="board"></main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <img alt="">
+    <div class="lb-info"></div>
+    <button class="lb-btn lb-close" aria-label="Close">Close</button>
+    <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+    <button class="lb-btn lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="vendor/Sortable.min.js"></script>
+  <script src="board.js"></script>
+</body>
+</html>
