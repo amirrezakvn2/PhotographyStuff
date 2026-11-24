@@ -526,7 +526,7 @@
   {
    "id": "up",
    "title": "Look Up",
-   "note": "Everyone is looking or pointing above the frame: kids pointing at the Atomium, a man's arm raised towards a kite between the towers, a couple under a needle with a giant insect on top, a crowd tilting their heads at a painted ceiling. Same gesture in four cities. Sequence goes from outdoor and open to indoor and closed.",
+   "note": "Kept as it was. Wonder: kids pointing at the Atomium, a man's arm raised to a kite between the towers, a couple under a needle with a giant insect on top, a crowd tilting their heads to a painted ceiling. One gesture in four cities.",
    "ids": [
     "51",
     "44",
@@ -535,153 +535,153 @@
    ]
   },
   {
-   "id": "audience",
-   "title": "Audience",
-   "note": "People watching something, mostly from behind: old men on a bench watching bocce, a man's bald head against a concert, a crowd behind railings under a giant laughing face, people on a wall watching dancers below. We watch them watching.",
+   "id": "hand",
+   "title": "Hand in Hand",
+   "note": "Adults guiding children into the city, and slowly letting go. A man reaches for a child's hand by the lake; a mother holds one child while another rides on shoulders; a man points a child towards a sign that says 'we are building something big'; finally a child races ahead on a scooter, the parent's cargo bike behind. Care, then independence. 03 and 54 are colour.",
    "ids": [
-    "14",
-    "06",
-    "28",
-    "61"
+    "03",
+    "54",
+    "46",
+    "65"
    ]
   },
   {
-   "id": "hidden",
-   "title": "Hiding Places",
-   "note": "Bodies half-hidden inside boxes: a child crouched in a black installation, faces in a slit, people with their heads in a porthole, and someone's legs sticking out of a photo booth while a man waves outside. The booth turns the series into a joke at the end.",
-   "ids": [
-    "26",
-    "27",
-    "29",
-    "62"
-   ]
-  },
-  {
-   "id": "thresholds",
-   "title": "Small Under Arches",
-   "note": "Arches and a tiny human in each: one figure and a pigeon under a Turin arch, two veiled girls under the Castello gate, specks of people under Gothic windows, a single figure on the Galleria roof.",
+   "id": "alone",
+   "title": "Alone in the Crowd",
+   "note": "Solitude inside the busy city. A single figure under an arch in the rain; a man on his phone while shoppers blur past; a man leaning on a shutter while people stream by; one tiny figure on the Galleria roof. Each person is surrounded, but nobody is with them.",
    "ids": [
     "13",
-    "21",
-    "12",
+    "25",
+    "41",
     "02"
    ]
   },
   {
-   "id": "white",
-   "title": "Children in White Rooms",
-   "note": "Pale Design Week installations, each with a child moving through them while adults stand still: a boy crossing white curves, a kid among panels, a child behind ribbons, a toddler at a white statue.",
+   "id": "together",
+   "title": "Together",
+   "note": "The opposite of 'Alone in the Crowd': bodies close to each other. Old friends on a bench watching bocce; chefs with their arms around each other; two women dancing at a concert; couples dancing on the steps. Read it straight after 'Alone in the Crowd'.",
+   "ids": [
+    "14",
+    "08",
+    "06",
+    "61"
+   ]
+  },
+  {
+   "id": "want",
+   "title": "What We're Sold",
+   "note": "People and the images made to sell to them. A Chanel model checks her watch above a man hauling cardboard; a child drags her mother towards a giant shoe under a billboard face; women pass a mannequin in the coat they are all wearing; a mural boy holds his face in despair while passers-by look at their phones. Luxury, labour, desire, indifference. Mostly colour (43 is B&W).",
+   "ids": [
+    "20",
+    "43",
+    "10",
+    "49"
+   ]
+  },
+  {
+   "id": "generations",
+   "title": "Generations",
+   "note": "Young lives at the feet of old things. An old woman watches a boy cross a white installation; a toddler stands before a classical statue; two girls in First Communion veils pass under the castle gate; young women laugh under a bronze horseman at sunset. Tradition, inheritance, and the new generation living inside it.",
    "ids": [
     "32",
+    "31",
+    "21",
+    "60"
+   ]
+  },
+  {
+   "id": "dark",
+   "title": "Into the Dark",
+   "note": "Curiosity pulling people into black spaces. Heads pushed into a porthole; faces in a slit window; a child crouched inside a black box; a man stepping through a dark doorway. The sequence moves from looking in to going in.",
+   "ids": [
+    "29",
+    "27",
+    "26",
+    "30"
+   ]
+  },
+  {
+   "id": "rhythm",
+   "title": "Falling into Line",
+   "note": "People unconsciously taking on the rhythm of the architecture around them: visitors in white standing like the white panels beside them; walkers lined up in a strip of light under Gothic windows; a woman striding past a run of arcades; figures between the columns of the Bourse.",
+   "ids": [
     "33",
-    "34",
-    "31"
-   ]
-  },
-  {
-   "id": "play",
-   "title": "Running Light",
-   "note": "Children in hard sunlight with long shadows: a scooter, kids climbing a ramp, a boy running under a storm sky, birds and dropped bicycles in a Veneto street.",
-   "ids": [
-    "65",
-    "58",
-    "48",
-    "17"
-   ]
-  },
-  {
-   "id": "display",
-   "title": "On Display",
-   "note": "Things made to be looked at, bigger than the people looking: a giant shoe, a yacht model in a black pool, a huge printed figure, a chandelier in a hall of rigging.",
-   "ids": [
-    "43",
-    "39",
-    "37",
-    "38"
-   ]
-  },
-  {
-   "id": "reflections",
-   "title": "Two Layers",
-   "note": "Glass that puts two places in one frame: the Duomo floating on a shop window, a caf\u00e9 inside a pane, a unicorn toy and the street outside, people walking through hanging posters.",
-   "ids": [
-    "09",
-    "36",
-    "47",
-    "41"
-   ]
-  },
-  {
-   "id": "doubles",
-   "title": "Doubles",
-   "note": "Colour. A real person echoes a painted or printed one: a woman sitting in the street under a painted woman on the wall, a mannequin in a black coat between women in black coats, passers-by under a mural boy holding his face, a billboard model above a man carrying cardboard.",
-   "ids": [
-    "57",
-    "10",
-    "49",
-    "20"
-   ]
-  },
-  {
-   "id": "carried",
-   "title": "Carried",
-   "note": "Being carried through the crowd: a dog's head out of a bag, a dog in a backpack, a child in arms and one on shoulders, a toddler in a stroller. 07 is black and white; the others are colour.",
-   "ids": [
-    "24",
-    "54",
-    "19",
-    "07"
-   ]
-  },
-  {
-   "id": "pedestals",
-   "title": "Pedestals",
-   "note": "Monuments nobody looks at. People sit at their feet or chat in front of them. Only three for now; your next batch may complete it.",
-   "ids": [
-    "56",
-    "60",
+    "12",
+    "16",
     "55"
    ]
   },
   {
-   "id": "waterside",
-   "title": "Waterside",
-   "note": "Colour. People at the water's edge, leaning on railings or standing by it: Lake Como twice, an Amsterdam canal, the Como fountain.",
+   "id": "loose",
+   "title": "Breaking Loose",
+   "note": "Moments of release in controlled spaces. A bird flies free above a crowd held back by a fence; pigeons scatter over bikes dropped on the ground; a boy spins in an empty square under a storm sky; kids climb a ramp that wasn't built for climbing.",
    "ids": [
-    "04",
-    "63",
-    "03",
-    "05"
+    "11",
+    "17",
+    "48",
+    "58"
    ]
   },
   {
-   "id": "green",
-   "title": "Green",
-   "note": "Colour. City grass as a stage: kids at a bench of paintings, a man under a yellow rose bush, a man playing with his dog under the vertical forest, walkers beside a parked pickup.",
+   "id": "companions",
+   "title": "Companions",
+   "note": "People and their dogs. A dog peers out of a bag at passing legs; a dog in a backpack looks straight at the camera; a man plays with his dog under the vertical forest; a man and his dog watch boys play football.",
    "ids": [
-    "23",
-    "35",
+    "07",
+    "24",
     "45",
-    "52"
+    "15"
+   ]
+  },
+  {
+   "id": "jokes",
+   "title": "Small Jokes",
+   "note": "The city's coincidences. A man waves next to a photo booth with someone's legs sticking out; a woman perches in the street under a painted woman on the wall; a giant toy unicorn stares out of a shop window; a toddler stretches in boredom while adults kneel to photograph the Galleria.",
+   "ids": [
+    "62",
+    "57",
+    "47",
+    "19"
+   ]
+  },
+  {
+   "id": "spectacle",
+   "title": "Spectacle",
+   "note": "Big shows, small audiences. A crowd behind railings under a giant laughing face; men beneath a towering printed figure; viewers circling a yacht model in the dark; a chandelier hanging over a hall of rigging.",
+   "ids": [
+    "28",
+    "37",
+    "39",
+    "38"
+   ]
+  },
+  {
+   "id": "side",
+   "title": "Side by Side",
+   "note": "Quiet company, no words needed. Two men at a lake railing; a couple taking a selfie by a canal; pairs sitting along a riverbank; two men resting at the base of a statue.",
+   "ids": [
+    "04",
+    "63",
+    "18",
+    "56"
    ]
   },
   {
    "id": "unplaced",
    "title": "Unplaced",
-   "note": "Not in a series yet. 46 (a man pointing at a 'we are building something big' sign) and 18 (the riverbank) are strong singles.",
+   "note": "Not in a series yet.",
    "ids": [
     "01",
-    "08",
-    "11",
-    "15",
-    "16",
-    "18",
+    "05",
+    "09",
     "22",
-    "25",
-    "30",
+    "23",
+    "34",
+    "35",
+    "36",
     "40",
     "42",
-    "46",
+    "52",
     "53",
     "64"
    ]
