@@ -526,7 +526,7 @@
   {
    "id": "up",
    "title": "Look Up",
-   "note": "Wonder spreading. 1: two kids point up at the Atomium; the discovery starts with children. 2: a grown man raises his arm to a kite between the towers; an adult joins in. 3: a couple stands close under a needle with a giant insect on top; now it's shared. 4: indoors, a whole crowd tilts their heads to a painted ceiling. From one child's finger to everyone.",
+   "note": "Wonder, passed from person to person. 1: two kids point up at the Atomium. 2: a grown man raises his arm to a kite between the towers. 3: a couple stands close under a needle with a giant insect on top. 4: indoors, a whole crowd tilts their heads to a painted ceiling. It starts with one child's finger and ends with everyone looking up together.",
    "ids": [
     "51",
     "44",
@@ -537,31 +537,21 @@
   {
    "id": "growing",
    "title": "Growing Up",
-   "note": "A childhood in four frames. 1: by the lake a man reaches down for a small child's hand. 2: at a concert a mother holds one child while another rides on shoulders; still carried. 3: a man points a child to a sign that reads 'we are building something big'; being shown the future. 4: a child races ahead on a scooter, the parent's bike now behind. Ends with letting go. 03 and 54 are colour; 46 and 65 B&W.",
+   "note": "A childhood, from a held hand to riding away. 1: by the lake a man reaches down for a small child's hand. 2: at a concert a mother holds one child while another rides on shoulders. 3: two boys stand by a stranger selling paintings on a bench; the first meeting with the wider world. 4: kids climb a concrete ramp together while a girl pushes to join them. 5: a child races ahead on a scooter, the parent's bike now behind. The first three are colour, the last two B&W: childhood fading into growing up.",
    "ids": [
     "03",
     "54",
-    "46",
+    "23",
+    "58",
     "65"
-   ]
-  },
-  {
-   "id": "dark",
-   "title": "From Dark to Light",
-   "note": "A walk through Design Week. 1: a man steps through a black doorway; we go in with him. 2: heads pushed into a porthole; curiosity. 3: a child crouched alone inside a black box; hiding, or lost. 4: faces in a narrow slit; looking for a way out. 5: outside in the white, an old woman watches a boy cross; the light, and someone keeping watch.",
-   "ids": [
-    "30",
-    "29",
-    "26",
-    "27",
-    "32"
    ]
   },
   {
    "id": "dance",
    "title": "Waiting for the Dance",
-   "note": "From loneliness to joining in. 1: at night a man stands on his phone as shoppers blur past him. 2: a man leans on a shutter, waiting, while people stream by. 3: at a concert, a man watches two women dance, close to the joy but not in it. 4: on the steps, couples dance together and people gather round. The loner finally joins.",
+   "note": "Loneliness, then joining in. 1: a young man sits alone on the castle lawn, looking back at people passing. 2: at night a man stands on his phone as shoppers blur past. 3: a man leans on a shutter, waiting, while the street streams by. 4: at a concert a man watches two women dance; close, but not in it. 5: on the steps, couples dance and people gather round. The city lets him in.",
    "ids": [
+    "22",
     "25",
     "41",
     "06",
@@ -569,10 +559,22 @@
    ]
   },
   {
-   "id": "desire",
-   "title": "What We're Sold",
-   "note": "How wanting is made and passed on. 1: a model checks her luxury watch on a billboard while a man hauls cardboard below; the image goes up. 2: women stop at a shop window, one photographing the mannequin; the wanting starts. 3: a child drags her mother towards a giant shoe under a billboard face; it's passed to the next generation. 4: a mural boy holds his face in his hands as passers-by look at their phones; what's left is emptiness.",
+   "id": "strangers",
+   "title": "Strangers to Friends",
+   "note": "How people come together. 1: seen from a tram, strangers wait side by side at a stop. 2: a whole street stops and gathers around bicycles fallen on the ground; strangers stopping for each other. 3: chefs throw their arms around each other while one watches alone from the balcony above. 4: old friends sit shoulder to shoulder on a bench watching bocce; a lifetime of it.",
    "ids": [
+    "53",
+    "64",
+    "08",
+    "14"
+   ]
+  },
+  {
+   "id": "sold",
+   "title": "What We're Sold",
+   "note": "Who works, who wants, and what's left. 1: a street sweeper pushes his barrow past glowing shop signs. 2: a model checks her luxury watch on a billboard while a man hauls cardboard below. 3: women stop at a shop window, one photographing the mannequin; the wanting starts. 4: a child drags her mother towards a giant shoe under a billboard face; it passes to the next generation. 5: a mural boy holds his face in his hands while passers-by look at their phones.",
+   "ids": [
+    "01",
     "20",
     "10",
     "43",
@@ -582,12 +584,34 @@
   {
    "id": "inherit",
    "title": "Inheritance",
-   "note": "The old hand the city to the young. 1: old men on a bench watch the bocce game; the elders. 2: a toddler stands before a classical statue; first meeting with the past. 3: two girls in First Communion veils pass under the castle gate; a ritual, a passage. 4: young women laugh under a bronze horseman at sunset; the city is theirs now.",
+   "note": "The old hand the city to the young. 1: an old woman watches a boy cross a white installation. 2: a toddler stands before a classical statue; a first meeting with the past. 3: two girls in First Communion veils pass under the castle gate; a ritual, a passage. 4: young women laugh under a bronze horseman at sunset; the city is theirs now.",
    "ids": [
-    "14",
+    "32",
     "31",
     "21",
     "60"
+   ]
+  },
+  {
+   "id": "lost",
+   "title": "Lost and Found",
+   "note": "A child's walk through Design Week. 1: a man steps into a black doorway. 2: people push their heads into a porthole, searching. 3: a child crouches alone inside a black box; lost, or hiding. 4: out in the white, a boy walks between still adults. 5: among white ribbons the child stands close to a grown-up again. Dark to light, alone to held.",
+   "ids": [
+    "30",
+    "29",
+    "26",
+    "33",
+    "34"
+   ]
+  },
+  {
+   "id": "time",
+   "title": "Time Passes",
+   "note": "Three frames about time. 1: an old woman walks slowly past the Bourse. 2: another old woman passes while children play football under the arcades. 3: the children have gone; their bikes lie on the ground and pigeons fly over the square.",
+   "ids": [
+    "55",
+    "16",
+    "17"
    ]
   },
   {
@@ -604,18 +628,19 @@
   {
    "id": "show",
    "title": "The Show",
-   "note": "A spectacle seen by those who don't care. 1: a crowd pressed against railings under a giant laughing face. 2: men dwarfed beneath a towering printed figure. 3: visitors circle a yacht model in the dark, silent. 4: in the Galleria, adults kneel to photograph while a toddler stretches in total boredom. The punchline.",
+   "note": "A spectacle and the people under it. 1: a crowd pressed against railings under a giant laughing face. 2: men dwarfed beneath a towering printed figure. 3: visitors circle a yacht model in the dark. 4: a man's head peeks over a wall at a glittering chandelier. 5: in the Galleria, adults kneel to photograph while a toddler stretches in total boredom. Only the child is honest.",
    "ids": [
     "28",
     "37",
     "39",
+    "38",
     "19"
    ]
   },
   {
    "id": "dogs",
    "title": "Companions",
-   "note": "A dog's way from carried to free (it mirrors 'Growing Up'). 1: a dog's head out of a bag; it only sees legs. 2: a dog in a backpack, high up, looks straight at us. 3: a dog on the ground beside its man, watching boys play football. 4: a dog runs and plays with its owner under the vertical forest.",
+   "note": "A dog's way from carried to free; it mirrors 'Growing Up'. 1: a dog's head out of a bag, seeing only legs. 2: a dog in a backpack, high up, looks straight at us. 3: on the ground beside its man, watching boys play football. 4: running and playing with its owner under the vertical forest.",
    "ids": [
     "07",
     "24",
@@ -626,19 +651,32 @@
   {
    "id": "side",
    "title": "Side by Side",
-   "note": "Company through a day, standing to resting. 1: two men at a lake railing, looking at the water. 2: a couple stops for a selfie by a canal. 3: pairs sit along a riverbank. 4: two men rest at the base of a statue, a shoe left on the ground; the day is done.",
+   "note": "Company without words, through a day. 1: two men at a lake railing, looking at the water. 2: a couple stops for a selfie by a canal. 3: people sit together in the sun outside a jazz caf\u00e9. 4: pairs sit along a riverbank. 5: two men rest at the base of a statue, a shoe left on the ground; the day is done.",
    "ids": [
     "04",
     "63",
+    "36",
     "18",
     "56"
    ]
   },
   {
+   "id": "joys",
+   "title": "Small Joys",
+   "note": "Colour. Little private happinesses. 1: a small child walks alone beside the Como fountain. 2: a man stops by a yellow rose bush while others picnic. 3: a girl carries red and blue balloons through the crowd. 4: two women in red dance by the roadside as a truck goes past.",
+   "ids": [
+    "05",
+    "35",
+    "42",
+    "52"
+   ]
+  },
+  {
    "id": "watching",
    "title": "Who's Watching",
-   "note": "The camera gets caught. 1: a man waves at the photographer while someone hides in a photo booth beside him. 2: a woman poses on a post in the street under a painted woman. 3: a giant toy unicorn stares out of a shop window, straight back at us.",
+   "note": "The people look back. 1: eyes in a narrow slit. 2: a man waves at the camera while someone hides in the photo booth beside him. 3: a woman poses on a post under a painted woman. 4: a giant toy unicorn stares out of a shop window, straight at us.",
    "ids": [
+    "27",
     "62",
     "57",
     "47"
@@ -647,29 +685,12 @@
   {
    "id": "unplaced",
    "title": "Unplaced",
-   "note": "Not in a story yet.",
+   "note": "Not in a story yet. 40 is the colour twin of 41.",
    "ids": [
-    "01",
     "02",
-    "05",
-    "08",
     "09",
-    "16",
-    "17",
-    "22",
-    "23",
-    "33",
-    "34",
-    "35",
-    "36",
-    "38",
     "40",
-    "42",
-    "52",
-    "53",
-    "55",
-    "58",
-    "64"
+    "46"
    ]
   }
  ]
