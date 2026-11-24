@@ -18,6 +18,8 @@
       <span id="status" class="status">Loading…</span>
     </div>
     <div class="bar-tools">
+      <input id="jump" class="jump" list="series-names" placeholder="Go to series…" aria-label="Go to series by name" autocomplete="off">
+      <datalist id="series-names"></datalist>
       <label class="size">Size <input id="size" type="range" min="70" max="220" value="120"></label>
       <button id="add">+ Series</button>
       <button id="export">Export</button>
@@ -26,16 +28,26 @@
     </div>
   </header>
 
-  <p class="help">Drag photos to reorder them or move them between series. On a phone, press and hold a photo for a moment before dragging. Tap a photo to see it large. Edit titles and notes directly. Everything is saved in this browser.</p>
+  <p class="help">Drag photos to reorder them or move them between series. On a phone, press and hold a photo for a moment before dragging. Or use the buttons on each photo: <b>⇄</b> moves it to a series you search for by name, <b>×</b> sends it to Unplaced. Tap a photo to see it large. Edit titles and notes directly. Everything is saved in this browser.</p>
 
   <main id="board"></main>
 
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <img alt="">
     <div class="lb-info"></div>
+    <div class="lb-actions"><button class="lb-move">⇄ Move to series…</button><button class="lb-unplace">× Move to Unplaced</button></div>
     <button class="lb-btn lb-close" aria-label="Close">Close</button>
     <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
     <button class="lb-btn lb-next" aria-label="Next">›</button>
+  </div>
+
+  <div id="mover" class="mover" aria-hidden="true" role="dialog" aria-label="Move photo">
+    <div class="mv-panel">
+      <div class="mv-title"></div>
+      <input class="mv-search" type="search" placeholder="Search series by name…" autocomplete="off">
+      <div class="mv-list"></div>
+      <button class="mv-cancel ghost">Cancel</button>
+    </div>
   </div>
 
   <script src="vendor/Sortable.min.js"></script>

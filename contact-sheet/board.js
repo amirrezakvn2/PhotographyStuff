@@ -43,7 +43,9 @@
     const p = photos[id], el = document.createElement("div");
     el.className = "card"; el.dataset.id = id;
     el.style.aspectRatio = `${p.w} / ${p.h}`;
-    el.innerHTML = `<img src="img/thumb/${id}.jpg" alt="Photo ${id}" loading="lazy" decoding="async"><span class="tag"><b>${i + 1}</b>${id}</span>`;
+    el.innerHTML = `<img src="img/thumb/${id}.jpg" alt="Photo ${id}" loading="lazy" decoding="async"><span class="tag"><b>${i + 1}</b>${id}</span>` +
+      `<span class="card-btns"><button class="card-btn" data-act="move" title="Move to another series" aria-label="Move photo ${id} to another series">⇄</button>` +
+      `<button class="card-btn unplace" data-act="unplace" title="Move to Unplaced" aria-label="Move photo ${id} to Unplaced">×</button></span>`;
     return el;
   }
 
@@ -81,6 +83,7 @@
       new Sortable(sheet, {
         group: "photos", animation: 220, easing: "cubic-bezier(.2,.7,.2,1)",
         delay: 160, delayOnTouchOnly: true, touchStartThreshold: 6,
+        filter: ".card-btn", preventOnFilter: false,
         ghostClass: "sortable-ghost", chosenClass: "sortable-chosen", dragClass: "sortable-drag",
         onEnd() { readDom(); renumber(); save(); }
       });
@@ -98,7 +101,96 @@
       });
     });
     renumber();
+    if (typeof refreshJump === "function") refreshJump();
   }
+
+  /* Moving photos without dragging */
+  const groupOf = (id) => state.find((g) => g.ids.includes(id));
+  function flash(id) {
+    const c = board.querySelector(`.card[data-id="${id}"]`);
+    if (!c) return;
+    c.classList.add("moved");
+    setTimeout(() => c.classList.remove("moved"), 1600);
+  }
+  function moveTo(id, targetId, newTitle) {
+    readDom();
+    const from = groupOf(id);
+    let to = state.find((g) => g.id === targetId);
+    if (!to && newTitle) {
+      to = { id: "s" + Date.now().toString(36), title: newTitle, note: "", ids: [] };
+      state.splice(state.findIndex((g) => g.id === "unplaced"), 0, to);
+    }
+    if (!to || to === from) return;
+    from.ids = from.ids.filter((x) => x !== id);
+    if (to.id === "unplaced") to.ids.unshift(id); else to.ids.push(id);
+    render();
+    save(`Moved ${id} to ${to.title}` + (to.id !== "unplaced" && to.ids.length > 5 ? ` (now ${to.ids.length} photos, over 5)` : ""));
+    flash(id);
+  }
+
+  const mover = $("#mover"), mvTitle = $(".mv-title", mover), mvSearch = $(".mv-search", mover), mvList = $(".mv-list", mover);
+  let mvId = null;
+  function renderMoveList() {
+    readDom();
+    const q = mvSearch.value.trim().toLowerCase(), cur = groupOf(mvId);
+    const hits = state.filter((g) => g !== cur && g.title.toLowerCase().includes(q));
+    mvList.innerHTML = "";
+    hits.forEach((g) => {
+      const b = document.createElement("button");
+      b.className = "mv-item"; b.dataset.target = g.id;
+      b.innerHTML = `<span></span><small>${g.ids.length}${g.id !== "unplaced" && g.ids.length >= 5 ? " · full" : ""}</small>`;
+      b.firstChild.textContent = g.title;
+      mvList.append(b);
+    });
+    const exact = state.some((g) => g.title.toLowerCase() === q);
+    if (q && !exact) {
+      const b = document.createElement("button");
+      b.className = "mv-item mv-new"; b.dataset.newTitle = mvSearch.value.trim();
+      b.textContent = `+ New series “${mvSearch.value.trim()}”`;
+      mvList.append(b);
+    }
+    if (!mvList.children.length) mvList.innerHTML = '<p class="mv-empty">No series with that name.</p>';
+  }
+  function openMover(id) {
+    readDom();
+    mvId = id;
+    mvTitle.textContent = `Move photo ${id} (now in ${groupOf(id).title})`;
+    mvSearch.value = "";
+    renderMoveList();
+    mover.classList.add("open"); mover.setAttribute("aria-hidden", "false");
+    setTimeout(() => mvSearch.focus(), 50);
+  }
+  const closeMover = () => { mover.classList.remove("open"); mover.setAttribute("aria-hidden", "true"); mvId = null; };
+  mvSearch.addEventListener("input", renderMoveList);
+  mvSearch.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") { const first = mvList.querySelector(".mv-item"); if (first) first.click(); }
+  });
+  mvList.addEventListener("click", (e) => {
+    const b = e.target.closest(".mv-item"); if (!b) return;
+    const id = mvId; closeMover(); close();
+    moveTo(id, b.dataset.target, b.dataset.newTitle);
+  });
+  $(".mv-cancel", mover).onclick = closeMover;
+  mover.addEventListener("click", (e) => { if (e.target === mover) closeMover(); });
+
+  /* Jump to a series by name */
+  const jump = $("#jump"), jumpList = $("#series-names");
+  function refreshJump() {
+    jumpList.innerHTML = "";
+    state.forEach((g) => { const o = document.createElement("option"); o.value = g.title; jumpList.append(o); });
+  }
+  function doJump() {
+    const q = jump.value.trim().toLowerCase(); if (!q) return;
+    readDom();
+    const g = state.find((x) => x.title.toLowerCase() === q) || state.find((x) => x.title.toLowerCase().includes(q));
+    if (!g) { status.textContent = `No series called “${jump.value.trim()}”`; return; }
+    const el = board.querySelector(`.group[data-id="${g.id}"]`);
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    el.classList.add("found"); setTimeout(() => el.classList.remove("found"), 1800);
+    jump.blur();
+  }
+  jump.addEventListener("change", doJump);
+  jump.addEventListener("keydown", (e) => { if (e.key === "Enter") doJump(); });
 
   /* Toolbar */
   $("#add").addEventListener("click", () => {
@@ -152,6 +244,7 @@
     const g = state.find((x) => x.ids.includes(id));
     lbImg.src = `img/full/${id}.jpg`;
     lbInfo.innerHTML = `<b>${id}</b> · ${p.date} · ${p.file} · ${g ? g.title : ""} (${pos + 1}/${seq.length})`;
+    $(".lb-unplace", lb).hidden = !g || g.id === "unplaced";
   }
   function open(id) {
     readDom();
@@ -160,12 +253,24 @@
     lb.classList.add("open"); lb.setAttribute("aria-hidden", "false");
   }
   const close = () => { lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true"); };
-  board.addEventListener("click", (e) => { const c = e.target.closest(".card"); if (c) open(c.dataset.id); });
+  board.addEventListener("click", (e) => {
+    const btn = e.target.closest(".card-btn"), c = e.target.closest(".card");
+    if (btn && c) {
+      e.stopPropagation();
+      if (btn.dataset.act === "unplace") moveTo(c.dataset.id, "unplaced");
+      else openMover(c.dataset.id);
+      return;
+    }
+    if (c) open(c.dataset.id);
+  });
+  $(".lb-move", lb).onclick = () => openMover(seq[pos]);
+  $(".lb-unplace", lb).onclick = () => { const id = seq[pos]; close(); moveTo(id, "unplaced"); };
   $(".lb-close", lb).onclick = close;
   $(".lb-prev", lb).onclick = () => show(pos - 1);
   $(".lb-next", lb).onclick = () => show(pos + 1);
   lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
   addEventListener("keydown", (e) => {
+    if (mover.classList.contains("open")) { if (e.key === "Escape") closeMover(); return; }
     if (!lb.classList.contains("open")) return;
     if (e.key === "Escape") close();
     if (e.key === "ArrowRight") show(pos + 1);
