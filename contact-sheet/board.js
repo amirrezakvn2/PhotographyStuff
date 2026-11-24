@@ -1,5 +1,5 @@
 (async function () {
-  const KEY = "contact-sheet-v1";
+  const KEY = "contact-sheet-v2";
   const $ = (s, el = document) => el.querySelector(s);
   const board = $("#board"), status = $("#status");
 
@@ -51,7 +51,10 @@
     board.querySelectorAll(".group").forEach((g) => {
       const cards = g.querySelectorAll(".card");
       cards.forEach((c, i) => ($(".tag b", c).textContent = g.dataset.id === "unplaced" ? "·" : i + 1));
-      $(".g-count", g).textContent = `${cards.length} photo${cards.length === 1 ? "" : "s"}`;
+      const cnt = $(".g-count", g);
+      cnt.textContent = `${cards.length} photo${cards.length === 1 ? "" : "s"}`;
+      cnt.classList.toggle("over", g.dataset.id !== "unplaced" && cards.length > 5);
+      if (cnt.classList.contains("over")) cnt.textContent += " · over 5";
     });
   }
 

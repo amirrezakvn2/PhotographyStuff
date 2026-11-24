@@ -27,6 +27,7 @@ h1 { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spac
 .g-title { flex: 1; min-width: 0; background: none; border: 0; color: var(--text); font-family: var(--display); font-weight: 600; font-size: 19px; letter-spacing: -.02em; padding: 2px 0; outline: none; border-bottom: 1px solid transparent; }
 .g-title:focus { border-bottom-color: #444; }
 .g-count { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.g-count.over { color: #ff8a6b; }
 .g-del { padding: 4px 9px; font-size: 12px; color: var(--muted); background: none; }
 .g-note { width: 100%; background: none; border: 0; color: #b9b7b3; font: inherit; font-size: 13px; resize: vertical; min-height: 22px; outline: none; padding: 2px 0 10px; border-bottom: 1px solid transparent; field-sizing: content; }
 .g-note:focus { border-bottom-color: #444; }

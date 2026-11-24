@@ -524,110 +524,173 @@
  ],
  "groups": [
   {
-   "id": "bigger",
-   "title": "Bigger Than Us",
-   "note": "Faces and figures made for selling or decorating (billboards, murals, posters, mannequins) towering over the real people passing by. The city looks back at you in a size you can't match.",
+   "id": "arches",
+   "title": "Arches",
+   "note": "Four doorways: a figure under an arch in Turin, two veiled girls under the Castello gate, a man beside a photo booth, tiny walkers under Gothic windows. Same shape, four kinds of waiting.",
    "ids": [
-    "20",
-    "25",
-    "43",
-    "28",
-    "37",
-    "49",
-    "61",
-    "10",
-    "47"
+    "13",
+    "21",
+    "62",
+    "12"
    ]
   },
   {
-   "id": "visitors",
-   "title": "Visitors",
-   "note": "Milan Design Week, 21\u201322 April 2026. People peering into, walking through and getting swallowed by installations. The architecture frames them; small figures against big built shapes.",
+   "id": "box",
+   "title": "Inside the Box",
+   "note": "Design Week's dark wooden installations. Every frame has a hole in a black wall, and someone in it: crouching, looking out, peeping in, stepping through.",
    "ids": [
-    "32",
-    "33",
     "26",
     "27",
     "29",
-    "30",
-    "34",
-    "31",
-    "38",
-    "39",
-    "36"
+    "30"
    ]
   },
   {
-   "id": "thresholds",
-   "title": "Thresholds",
-   "note": "Arches, doorways, hard shadow and cut-out light. Graphic black and white where people are reduced to small figures standing at an edge between dark and light.",
+   "id": "white",
+   "title": "White Rooms",
+   "note": "The opposite of 'Inside the Box': pale installations, children and visitors drifting through white curves, panels and ribbons.",
    "ids": [
-    "13",
-    "12",
-    "21",
-    "02",
-    "59",
-    "62",
+    "32",
+    "33",
+    "34",
+    "31"
+   ]
+  },
+  {
+   "id": "light",
+   "title": "Hard Light",
+   "note": "Low sun cutting the scene into blocks: a man pointing at a sign, a hall lit through a window, a child on a scooter dragging his shadow, a sunburst over the crowd.",
+   "ids": [
     "46",
-    "09",
+    "59",
+    "65",
     "11"
    ]
   },
   {
-   "id": "small",
-   "title": "Small in the City",
-   "note": "Children and dogs moving through adult public space, playing, pointing, being carried, running. A lighter counterweight to the other series.",
+   "id": "faces",
+   "title": "Faces Above",
+   "note": "Billboard, poster and mural faces looking down on people who don't look back. 20 and 49 are colour; convert them to B&W or drop one to keep it at four.",
    "ids": [
-    "19",
-    "15",
-    "23",
-    "51",
-    "58",
-    "65",
-    "48",
-    "07",
-    "24",
-    "45",
-    "05"
+    "43",
+    "28",
+    "37",
+    "20",
+    "49"
    ]
   },
   {
-   "id": "north",
-   "title": "Northbound (place series)",
-   "note": "Brussels and Amsterdam, May 2026. Works as a travel diary; many frames could also move into the thematic series above.",
+   "id": "play",
+   "title": "Play",
+   "note": "Kids (and dancers) using the city as a playground: pointing at the Atomium, climbing a ramp, running under a storm sky, dancing on steps.",
    "ids": [
-    "50",
-    "52",
-    "53",
-    "54",
-    "55",
-    "56",
-    "57",
-    "60",
-    "63",
+    "51",
+    "58",
+    "48",
+    "61"
+   ]
+  },
+  {
+   "id": "glass",
+   "title": "Through Glass",
+   "note": "Reflections and windows layering inside and outside: the Duomo in a shop front, a caf\u00e9 in a pane, a toy unicorn behind glass, a man framed by hanging posters.",
+   "ids": [
+    "09",
+    "36",
+    "47",
+    "40"
+   ]
+  },
+  {
+   "id": "dark",
+   "title": "After Dark",
+   "note": "Night and indoor spectacle: department-store glow, a stage rig, a yacht model in a black room, a concert crowd.",
+   "ids": [
+    "25",
+    "38",
+    "39",
+    "06"
+   ]
+  },
+  {
+   "id": "piazza",
+   "title": "Piazza",
+   "note": "Old squares and streets full of ordinary life. 17 and 64 rhyme: bicycles lying on the ground in Veneto and Amsterdam.",
+   "ids": [
+    "14",
+    "16",
+    "17",
     "64"
+   ]
+  },
+  {
+   "id": "dogs",
+   "title": "Carried",
+   "note": "Dogs in bags and backpacks, and dogs running free. 07 and 24 are almost a pair.",
+   "ids": [
+    "07",
+    "24",
+    "45",
+    "15"
+   ]
+  },
+  {
+   "id": "monuments",
+   "title": "Pedestals",
+   "note": "Statues and grand fa\u00e7ades that nobody is looking at. People sit at their feet, take selfies, chat.",
+   "ids": [
+    "56",
+    "60",
+    "55",
+    "50"
+   ]
+  },
+  {
+   "id": "water",
+   "title": "Railings",
+   "note": "People leaning on railings by the water: Lake Como, an Amsterdam canal, a riverbank. Calm colour frames.",
+   "ids": [
+    "04",
+    "63",
+    "18",
+    "03"
+   ]
+  },
+  {
+   "id": "lawns",
+   "title": "Lawns",
+   "note": "City grass as a stage: kids at a bench of paintings, a man by a rose tree, a castle lawn, a kite under the towers.",
+   "ids": [
+    "23",
+    "35",
+    "22",
+    "44"
+   ]
+  },
+  {
+   "id": "crowd",
+   "title": "Celebrations",
+   "note": "Crowds gathered for something: balloons in Brera, a child on shoulders at a concert, the Galleria, chefs on a balcony.",
+   "ids": [
+    "42",
+    "54",
+    "19",
+    "08"
    ]
   },
   {
    "id": "unplaced",
    "title": "Unplaced",
-   "note": "Not in a series yet. Some are strong singles (14 bocce players, 17 birds and fallen bikes, 18 riverbank) that could anchor a future Veneto set.",
+   "note": "Not in a series yet.",
    "ids": [
     "01",
-    "03",
-    "04",
-    "06",
-    "08",
-    "14",
-    "16",
-    "17",
-    "18",
-    "22",
-    "35",
-    "40",
+    "02",
+    "05",
+    "10",
     "41",
-    "42",
-    "44"
+    "52",
+    "53",
+    "57"
    ]
   }
  ]
