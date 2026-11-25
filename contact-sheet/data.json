@@ -520,6 +520,94 @@
    "w": 1500,
    "h": 1125,
    "bw": true
+  },
+  {
+   "id": "66",
+   "file": "PSX_20220705_004453.jpg",
+   "date": "2022-07-05",
+   "w": 2268,
+   "h": 1648,
+   "bw": false
+  },
+  {
+   "id": "67",
+   "file": "PSX_20220618_220739.jpg",
+   "date": "2022-06-18",
+   "w": 1659,
+   "h": 2212,
+   "bw": false
+  },
+  {
+   "id": "68",
+   "file": "IMG_3734.jpg",
+   "date": "",
+   "w": 1659,
+   "h": 2212,
+   "bw": false
+  },
+  {
+   "id": "69",
+   "file": "IMG_3716.jpg",
+   "date": "",
+   "w": 2212,
+   "h": 1659,
+   "bw": false
+  },
+  {
+   "id": "70",
+   "file": "20240901_172657.jpg",
+   "date": "2024-09-01",
+   "w": 1659,
+   "h": 2212,
+   "bw": true
+  },
+  {
+   "id": "71",
+   "file": "IMG_20240622_132411_940.jpg",
+   "date": "2024-06-22",
+   "w": 2212,
+   "h": 1659,
+   "bw": false
+  },
+  {
+   "id": "72",
+   "file": "IMG_3644.jpg",
+   "date": "",
+   "w": 2212,
+   "h": 1659,
+   "bw": false
+  },
+  {
+   "id": "73",
+   "file": "IMG_3372.jpg",
+   "date": "",
+   "w": 2212,
+   "h": 1658,
+   "bw": true
+  },
+  {
+   "id": "74",
+   "file": "IMG_2893.jpg",
+   "date": "",
+   "w": 1658,
+   "h": 2212,
+   "bw": false
+  },
+  {
+   "id": "75",
+   "file": "IMG_0992_4.jpg",
+   "date": "",
+   "w": 1659,
+   "h": 2212,
+   "bw": true
+  },
+  {
+   "id": "76",
+   "file": "PSX_20220821_222237.jpg",
+   "date": "2022-08-21",
+   "w": 1932,
+   "h": 1932,
+   "bw": false
   }
  ],
  "groups": [
@@ -537,59 +625,59 @@
   {
    "id": "held",
    "title": "Held",
-   "note": "The small in the hands of the big, from holding to letting go. 1: a father bends down to take a toddler's hand on the lakeside path while the family walks ahead. 2: a man carries his son, the boy's face pressed into his shoulder, while beside them a dog rides in a backpack. 3: at a concert, a mother hugs her child, a grandmother films, a girl rides on her father's shoulders: three generations holding each other. 4: a mother pulls her little girl along, away from the giant shoe she wants to stay and look at; the hand that guides is also the hand that pulls. 5: a child rides ahead on a scooter, the parent's cargo bike now behind. Letting go.",
+   "note": "The small in the hands of the big, from holding to letting go. 1: a father bends down to take a toddler's hand on the lakeside path. 2: a man carries his son, the boy's face pressed into his shoulder, a dog riding in a backpack beside them. 3: at a concert, a mother hugs her child, a grandmother films, a girl rides on her father's shoulders. 4: a mother steers a stroller through a crowd of strangers' backs; the toddler, pacifier in mouth, sees only legs and caps. 5: a child rides ahead on a scooter, the parent's cargo bike now behind. Letting go.",
    "ids": [
     "03",
     "24",
     "54",
-    "43",
+    "72",
     "65"
    ]
   },
   {
    "id": "childcity",
    "title": "A Child's City",
-   "note": "The city at child height. 1: a toddler stands before a stone giant while her mother bends to her. 2: two boys study a stranger's drawings laid out on a park bench. 3: a child peeks out through a curtain of white ribbons. 4: a girl pushes herself up the ramp to join the boys sitting on top. 5: in the Galleria, adults kneel to photograph the architecture while a little girl in her stroller stretches, completely bored. Read it after 'Held'.",
+   "note": "The world at child height. 1: from the dark of a shop, a child climbs into the open boot of a car outside, the doorway framing it like a stage. 2: a toddler stands before a stone giant while her mother bends to her. 3: two boys study a stranger's drawings laid out on a park bench. 4: a girl pushes herself up the ramp to join the boys sitting on top. 5: in the Galleria, adults kneel to photograph the architecture while a little girl in her stroller stretches, completely bored. Read it after 'Held'.",
    "ids": [
+    "67",
     "31",
     "23",
-    "34",
     "58",
     "19"
    ]
   },
   {
-   "id": "playwatch",
-   "title": "Watching Them Play",
-   "note": "The old watching the young, and time passing. 1: a woman with her small dog watches two boys chase a ball across the square. 2: an old woman walks past while children play football under the arcades. 3: an old woman stops to watch a small boy cross a white courtyard. 4: old men sit shoulder to shoulder watching their own game, bocce. 5: the children have gone; their bikes lie on the ground and pigeons fly over the square.",
+   "id": "time",
+   "title": "Watching Them Pass",
+   "note": "Old age watching youth go by, ending in memory. 1: a woman with her small dog watches two boys chase a ball across the square. 2: an old woman stops to watch a small boy cross a white courtyard. 3: two young men stride past, heads high, while an old woman in a wheelchair watches from a caf\u00e9 table and pigeons wander at our feet. 4: old men sit shoulder to shoulder watching their own game, bocce. 5: in a dark museum an old man walks past a painting of a young girl standing in a doorway, his head bowed. The girl she was, or the girl he knew.",
    "ids": [
     "15",
-    "16",
     "32",
+    "68",
     "14",
-    "17"
+    "70"
    ]
   },
   {
    "id": "alone",
    "title": "Alone Among Others",
-   "note": "Loneliness inside the crowd, from day into night. 1: one chef leans alone on the balcony above while his colleagues embrace and laugh below. 2: a young man sits by himself on the castle lawn, looking back. 3: a man waits against a shutter while young people blur past. 4: at night a man stands on his phone, shoppers streaming around him. 5: at a concert, a man watches two women dance; close to their joy, but outside it. Read 'Company' right after.",
+   "note": "Loneliness inside the crowd, from day into night. 1: one chef leans alone on the balcony above while his colleagues embrace and laugh below. 2: a young man sits by himself on the castle lawn, looking back. 3: a man waits against a shutter while young people blur past. 4: at night, behind glass, two young men sit facing each other wearing VR headsets, each in another world, while two girls sit outside the window lit by their phones. 5: at a concert, a man watches two women dance; close to their joy, but outside it. Read 'Company' right after.",
    "ids": [
     "08",
     "22",
     "41",
-    "25",
+    "69",
     "06"
    ]
   },
   {
    "id": "company",
    "title": "Company",
-   "note": "The answer to 'Alone Among Others': being with someone. 1: two men stand side by side at a lake railing, silently watching a boat. 2: small groups of friends sit along the river's edge. 3: a couple takes a selfie while three friends sit with their legs over the canal. 4: three young women laugh together under a bronze horseman. 5: on the steps, couples dance. From silent company to dancing.",
+   "note": "The answer to 'Alone Among Others': real attention to another person. 1: two men stand side by side at a lake railing, silently watching a boat. 2: under a castle arcade, a man directs a woman's pose for a photo, his shadow on the wall reaching towards her. 3: two people lie head to head on the edge of the castle moat, laughing up at the sky. 4: three young women laugh together under a bronze horseman. 5: on the steps, couples dance.",
    "ids": [
     "04",
-    "18",
-    "63",
+    "73",
+    "74",
     "60",
     "61"
    ]
@@ -597,11 +685,11 @@
   {
    "id": "billboards",
    "title": "Under the Billboards",
-   "note": "Real people beneath the images made for them. 1: a street sweeper pushes his barrow under glowing shop signs. 2: a man hauls cardboard beneath a model checking her luxury watch. 3: women stop at a shop window; one hides her face behind her phone, another stares at the mannequin. 4: a crowd stands fenced in under a giant laughing face. 5: a painted boy holds his head in his hands while real people walk past without looking.",
+   "note": "Real people beneath the images made for them. 1: a street sweeper pushes his barrow under glowing shop signs. 2: a man hauls cardboard beneath a model checking her luxury watch. 3: a mother pulls her little girl away from a giant shoe she wants to stay and look at, under a billboard face. 4: a crowd stands fenced in under a giant laughing face. 5: a painted boy holds his head in his hands while real people walk past without looking.",
    "ids": [
     "01",
     "20",
-    "10",
+    "43",
     "28",
     "49"
    ]
@@ -609,7 +697,7 @@
   {
    "id": "curious",
    "title": "Curious",
-   "note": "Grown-ups becoming children again. 1: a man pokes his head into a dark doorway. 2: people push their heads into a porthole to see what's inside. 3: faces appear in a narrow slit. 4: a woman crouches in an opening, peeking out like a kid playing hide and seek. 5: a man waves at the camera while someone hides in the photo booth beside him. The game ends in a joke.",
+   "note": "Grown-ups becoming children again. 1: a man pokes his head into a dark doorway. 2: people push their heads into a porthole to see what's inside. 3: faces appear in a narrow slit. 4: a woman crouches in an opening, peeking out like a kid playing hide and seek. 5: a man waves at the camera while someone hides in the photo booth beside him.",
    "ids": [
     "30",
     "29",
@@ -621,44 +709,57 @@
   {
    "id": "passage",
    "title": "Passage",
-   "note": "Black and white, quiet, almost spiritual. 1: two girls in First Communion veils walk through a dark gate towards the castle; a rite of passage. 2: a lone figure waits under an arch in the rain. 3: small figures cross a strip of light between dark walls. 4: a single tiny figure stands on the Galleria roof against the sky. 5: a bird lifts off above the crowd. From the gate to the sky.",
+   "note": "Walking into the unknown. Quiet, almost spiritual. 1: two girls in First Communion veils walk through a dark gate towards the castle. 2: a lone figure waits under an arch in the rain. 3: small figures cross a strip of light between dark walls. 4: under a grey sky a woman in a headscarf walks along an old stone wall while men sit looking out over the plain and grazing sheep. 5: four figures walk down a road into thick fog as birds rise beside them. From a gate to the open, from a ritual to the unknown.",
    "ids": [
     "21",
     "13",
     "12",
-    "02",
-    "11"
+    "66",
+    "75"
    ]
   },
   {
    "id": "shared",
    "title": "Shared Ground",
-   "note": "Strangers sharing the same piece of city. 1: from a tram, strangers wait together at a stop. 2: people share the sun outside a jazz caf\u00e9. 3: two men rest on a statue's base where someone has left their shoes. 4: a whole street gathers around bicycles lying on the ground.",
+   "note": "Strangers sharing the same piece of city. 1: from a tram, strangers wait together at a stop. 2: an old woman walks across a square while children play football under the arcades. 3: people share the sun outside a jazz caf\u00e9. 4: small groups sit along the river's edge. 5: a couple takes a selfie while three friends sit with their legs over the canal.",
    "ids": [
     "53",
+    "16",
     "36",
+    "18",
+    "63"
+   ]
+  },
+  {
+   "id": "left",
+   "title": "Left Behind",
+   "note": "What people leave, and the absence it shows. 1: children's bikes dropped in the middle of a square as pigeons fly over. 2: a crowd gathers around bicycles lying on the street. 3: two men rest on a statue's base beside a pair of shoes someone left there. 4: a pair of sneakers hangs by its laces from the corner of a roof against an empty sky. The people are gone; their traces stay.",
+   "ids": [
+    "17",
+    "64",
     "56",
-    "64"
+    "76"
    ]
   },
   {
    "id": "joys",
    "title": "Small Joys",
-   "note": "Colour. Private happinesses. 1: an old man stops beside a yellow rose bush while others picnic. 2: a small child walks along the edge of the Como fountain. 3: a girl carries red and blue balloons through the crowd. 4: a man crouches to play with his dog under the vertical forest. 5: women in red dance by the roadside as a truck passes.",
+   "note": "Colour. Private happinesses. 1: an old man stops beside a yellow rose bush while others picnic. 2: a small child walks along the edge of the Como fountain. 3: a girl carries red and blue balloons through the crowd. 4: a man crouches to play with his dog under the vertical forest. 5: dancers in gold and white saris perform beside the Duomo's marble walls.",
    "ids": [
     "35",
     "05",
     "42",
     "45",
-    "52"
+    "71"
    ]
   },
   {
    "id": "watchus",
    "title": "Watching Us",
-   "note": "Who is looking at whom. 1: a puppy tucked in a coat watches legs walk past. 2: a man's head peeks over a wall below a glittering chandelier. 3: a woman sits on a bollard under a painted woman. 4: a toy unicorn looks out of a shop window at the street.",
+   "note": "Who is looking at whom. 1: a puppy tucked in a coat watches legs walk past. 2: women at a luxury window; one hides her face behind her phone, another stares at the mannequin. 3: a man's head peeks over a wall below a glittering chandelier. 4: a woman sits on a bollard under a painted woman. 5: a toy unicorn looks out of a shop window at the street.",
    "ids": [
     "07",
+    "10",
     "38",
     "57",
     "47"
@@ -667,15 +768,20 @@
   {
    "id": "unplaced",
    "title": "Unplaced",
-   "note": "Not in a story yet. 40 is the colour twin of 41.",
+   "note": "Not in a story yet.",
    "ids": [
+    "02",
     "09",
+    "11",
+    "25",
     "33",
+    "34",
     "37",
     "39",
     "40",
     "46",
     "48",
+    "52",
     "55"
    ]
   }
