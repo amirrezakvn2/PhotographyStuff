@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta name="robots" content="noindex">
+  <title>All photos — contact sheet</title>
+  <style>
+    :root { --bg: #0c0c0c; --text: #e9e7e3; --muted: #8b8a87; --line: #262626; --accent: #e8c547; --h: 90px; --gap: 3px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif; font-size: 13px; }
+    .bar { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 10px 12px; background: rgba(12,12,12,.94); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .bar b { font-weight: 600; font-size: 15px; letter-spacing: -.01em; }
+    .bar .count { color: var(--muted); }
+    .bar .spacer { flex: 1; }
+    .bar a, .bar button, .bar select { background: #1b1b1b; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; text-decoration: none; }
+    .bar button.on { border-color: var(--accent); color: var(--accent); }
+    .bar label { color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .bar input[type=range] { width: 110px; accent-color: var(--text); }
+
+    #grid { display: flex; flex-wrap: wrap; gap: var(--gap); padding: var(--gap); align-content: flex-start; }
+    .ph { position: relative; height: var(--h); flex: none; background: #1a1a1a; cursor: zoom-in; overflow: hidden; }
+    .ph img { height: 100%; width: auto; display: block; }
+    .ph span { position: absolute; left: 0; top: 0; background: rgba(0,0,0,.65); color: #fff; font-size: 10px; padding: 0 4px; font-variant-numeric: tabular-nums; }
+    body.no-ids .ph span { display: none; }
+    .ph:hover { outline: 1px solid #666; z-index: 1; }
+
+    .lb { position: fixed; inset: 0; z-index: 50; background: rgba(6,6,6,.97); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; opacity: 0; pointer-events: none; transition: opacity .25s; }
+    .lb.open { opacity: 1; pointer-events: auto; }
+    .lb img { max-width: 96vw; max-height: 88vh; object-fit: contain; }
+    .lb p { color: var(--muted); }
+    .lb button { position: absolute; background: none; border: 0; color: var(--muted); font-size: 38px; padding: 14px; cursor: pointer; line-height: 1; }
+    .lb .x { top: 4px; right: 6px; font-size: 15px; }
+    .lb .prev { left: 2px; top: 50%; transform: translateY(-50%); }
+    .lb .next { right: 2px; top: 50%; transform: translateY(-50%); }
+    @media (max-width: 640px) { .lb .prev, .lb .next { display: none; } }
+    @media (max-width: 640px) { .bar { gap: 6px; padding: 6px 8px; font-size: 12px; } .bar b { font-size: 13px; } .bar a, .bar button, .bar select { padding: 4px 8px; } .bar input[type=range] { width: 70px; } .bar .spacer { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <b>All photos</b><span class="count" id="count"></span>
+    <span class="spacer"></span>
+    <select id="order" aria-label="Order">
+      <option value="story">Story order</option>
+      <option value="date">Date order</option>
+      <option value="number">By number</option>
+    </select>
+    <label>Size <input id="size" type="range" min="40" max="260" value="90"></label>
+    <button id="fit">Fit all on screen</button>
+    <button id="ids">Numbers</button>
+    <a href="./">Story board →</a>
+  </div>
+  <div id="grid"></div>
+
+  <div class="lb" id="lb"><img alt=""><p></p><button class="x">Close</button><button class="prev">‹</button><button class="next">›</button></div>
+
+  <script>
+  (async function () {
+    const $ = (s) => document.querySelector(s);
+    const data = await fetch("data.json", { cache: "no-cache" }).then((r) => r.json());
+    const photos = Object.fromEntries(data.photos.map((p) => [p.id, p]));
+    const grid = $("#grid"), size = $("#size"), root = document.documentElement;
+    const get = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+    const set = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+
+    // Story order follows the board: your saved layout if there is one, otherwise the suggested stories.
+    function storyGroups() {
+      for (const k of ["contact-sheet-v8"]) {
+        try { const s = JSON.parse(get(k)); if (s && s.groups) return s.groups; } catch {}
+      }
+      return data.groups;
+    }
+    function ordered(mode) {
+      const all = data.photos.map((p) => p.id);
+      if (mode === "date") return [...all].sort((a, b) => (photos[a].date || "9").localeCompare(photos[b].date || "9") || a.localeCompare(b));
+      if (mode === "number") return [...all].sort();
+      const seen = new Set(), out = [];
+      storyGroups().forEach((g) => g.ids.forEach((id) => { if (photos[id] && !seen.has(id)) { seen.add(id); out.push(id); } }));
+      all.forEach((id) => { if (!seen.has(id)) out.push(id); });
+      return out;
+    }
+
+    let seq = [];
+    function render() {
+      seq = ordered($("#order").value);
+      grid.innerHTML = seq.map((id, i) => {
+        const p = photos[id];
+        return `<div class="ph" data-i="${i}" style="aspect-ratio:${p.w}/${p.h}"><img src="img/thumb/${id}.jpg" alt="Photo ${id}" decoding="async"><span>${id}</span></div>`;
+      }).join("");
+      $("#count").textContent = `${seq.length} photos`;
+    }
+
+    const apply = (h) => { root.style.setProperty("--h", h + "px"); size.value = Math.round(h); };
+
+    // Largest thumbnail height at which every photo fits in the visible window.
+    function fitAll() {
+      const avail = innerHeight - $(".bar").offsetHeight - 4;
+      let lo = 16, hi = 400;
+      for (let k = 0; k < 18; k++) {
+        const mid = (lo + hi) / 2;
+        root.style.setProperty("--h", mid + "px");
+        if (grid.scrollHeight <= avail) lo = mid; else hi = mid;
+      }
+      apply(Math.floor(lo));
+    }
+
+    let fitMode = get("cs-all-fit") === "1";
+    const setFit = (on) => { fitMode = on; $("#fit").classList.toggle("on", on); set("cs-all-fit", on ? "1" : "0"); if (on) fitAll(); };
+
+    $("#order").value = get("cs-all-order") || "story";
+    $("#order").addEventListener("change", () => { set("cs-all-order", $("#order").value); render(); if (fitMode) fitAll(); });
+    size.addEventListener("input", () => { setFit(false); apply(+size.value); set("cs-all-size", size.value); });
+    $("#fit").addEventListener("click", () => setFit(!fitMode));
+    $("#ids").addEventListener("click", () => { document.body.classList.toggle("no-ids"); $("#ids").classList.toggle("on", !document.body.classList.contains("no-ids")); set("cs-all-ids", document.body.classList.contains("no-ids") ? "0" : "1"); });
+    if (get("cs-all-ids") === "0") document.body.classList.add("no-ids");
+    $("#ids").classList.toggle("on", !document.body.classList.contains("no-ids"));
+    let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => fitMode && fitAll(), 150); });
+
+    render();
+    apply(+(get("cs-all-size") || (innerWidth < 640 ? 60 : 90)));
+    setFit(fitMode);
+
+    // Full-screen view
+    const lb = $("#lb"), lbImg = $("#lb img"), lbP = $("#lb p");
+    let pos = 0;
+    const show = (i) => { pos = (i + seq.length) % seq.length; const p = photos[seq[pos]]; lbImg.src = `img/full/${p.id}.jpg`; lbP.textContent = `${p.id} · ${p.date || ""} · ${pos + 1}/${seq.length}`; };
+    const close = () => lb.classList.remove("open");
+    grid.addEventListener("click", (e) => { const c = e.target.closest(".ph"); if (c) { show(+c.dataset.i); lb.classList.add("open"); } });
+    $("#lb .x").onclick = close; $("#lb .prev").onclick = () => show(pos - 1); $("#lb .next").onclick = () => show(pos + 1);
+    lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
+    addEventListener("keydown", (e) => { if (!lb.classList.contains("open")) return; if (e.key === "Escape") close(); if (e.key === "ArrowRight") show(pos + 1); if (e.key === "ArrowLeft") show(pos - 1); });
+    let x0 = null;
+    lb.addEventListener("touchstart", (e) => (x0 = e.touches[0].clientX), { passive: true });
+    lb.addEventListener("touchend", (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(pos + (dx < 0 ? 1 : -1)); x0 = null; });
+  })();
+  </script>
+</body>
+</html>
